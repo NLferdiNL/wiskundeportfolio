@@ -1,0 +1,10 @@
+body{
+    background-color: azure;
+}
+
+#container{
+    width: 800px;
+    border: 2px solid black;
+    display: block;
+    background-color: aliceblue;
+}
