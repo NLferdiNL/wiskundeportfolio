@@ -48,19 +48,21 @@ function Vector(dx,dy){
         var dikte = 2;
         var pijlDikte = 6;
         var PijlBreedte = 20;
+        var PijlLengte = _r - PijlBreedte
         context.save();
         context.translate(x,y);
         context.rotate(_hoek);
         context.beginPath();
         context.lineWidth = 3;
         context.fillStyle = kleur;
+        context.strokeStyle = "black";
         context.moveTo(0,0);
         context.lineTo(0,-dikte);
-        context.lineTo(_r*vergroting,-dikte);
-        context.lineTo(_r*vergroting,-pijlDikte);
-        context.lineTo(_r*vergroting + PijlBreedte,0);
-        context.lineTo(_r*vergroting,pijlDikte);
-        context.lineTo(_r*vergroting,dikte);
+        context.lineTo(_r*vergroting- PijlBreedte,-dikte);
+        context.lineTo(_r*vergroting-PijlBreedte,-pijlDikte);
+        context.lineTo(_r*vergroting,0);
+        context.lineTo(_r*vergroting- PijlBreedte,pijlDikte);
+        context.lineTo(_r*vergroting- PijlBreedte,dikte);
         context.lineTo(0,dikte);
         context.lineTo(0,0);
         context.closePath();

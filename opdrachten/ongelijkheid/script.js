@@ -40,7 +40,8 @@ window.addEventListener("load",function(){
         }
         bal.teken(context);
         //r.teken(0,0,1,"yellow",context);
-        v.teken(r.dx,r.dy,10,"white",context);
+        v.teken(r.dx,r.dy,30,"white",context);
+        r.teken(0,0,1,"white",context);
         S.x = LijnOperaties.snijpunt(l,m).x;
         S.y = LijnOperaties.snijpunt(l,m).y;
         S.teken(context);
