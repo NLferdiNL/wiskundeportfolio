@@ -1,0 +1,10 @@
+body{ 
+	background-color: azure; 
+}
+
+#canvas{
+    display: block;
+    margin: auto;
+    background-color: ghostwhite;
+    border: 2px solid black;
+}

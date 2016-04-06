@@ -11,7 +11,7 @@ function Rooster(w,h,dx,dy,modx,mody){
     * @param {context} context - target context
     * @returns {void}
     */   
-    this.draw = function(context){
+    this.teken = function(context){
         for(i = 0; i< this.h; i+=this.dx){
             context.beginPath();
             context.strokeStyle = "#000000";

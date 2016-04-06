@@ -40,7 +40,7 @@ function Punt(x, y, r, kleur){
         drag = false;
     });
 
-    this.draw = function (context) {
+    this.teken = function (context) {
         context.beginPath();
         context.lineWidth = 4;
         context.fillStyle = this.kleur;

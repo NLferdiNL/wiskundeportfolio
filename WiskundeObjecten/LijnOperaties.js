@@ -1,5 +1,5 @@
 var LijnOperaties = {
-    LijnDoorTweePunten:function(l,A,B){
+    lijnDoorTweePunten:function(l,A,B){
         l.a = B.y - A.y;
         l.b = -(B.x - A.x);
         l.c = l.a * A.x + l.b * A.y;
@@ -18,7 +18,7 @@ var LijnOperaties = {
         ans.y = (m.c*l.a - l.c*m.a)/(l.a*m.b - m.a*l.b);
         return ans;
     },
-    LijnDoorVectorEnPunt(l,v,Px,Py){
+    lijnDoorVectorEnPunt(l,v,Px,Py){
         l.a = v.dy;
         l.b = -v.dx;
         l.c = Px*l.a + Py*l.b;
