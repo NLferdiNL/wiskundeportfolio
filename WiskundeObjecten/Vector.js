@@ -55,16 +55,27 @@ function Vector(dx,dy){
         context.beginPath();
         context.lineWidth = 3;
         context.fillStyle = kleur;
-        context.strokeStyle = "black";
+         context.strokeStyle = "black";
         context.moveTo(0,0);
-        context.lineTo(0,-dikte);
-        context.lineTo(_r*vergroting- PijlBreedte,-dikte);
-        context.lineTo(_r*vergroting-PijlBreedte,-pijlDikte);
-        context.lineTo(_r*vergroting,0);
-        context.lineTo(_r*vergroting- PijlBreedte,pijlDikte);
-        context.lineTo(_r*vergroting- PijlBreedte,dikte);
-        context.lineTo(0,dikte);
-        context.lineTo(0,0);
+        if(_r>0){
+            context.lineTo(0,-dikte);
+            context.lineTo(_r*vergroting- PijlBreedte,-dikte);
+            context.lineTo(_r*vergroting-PijlBreedte,-pijlDikte);
+            context.lineTo(_r*vergroting,0);
+            context.lineTo(_r*vergroting- PijlBreedte,pijlDikte);
+            context.lineTo(_r*vergroting- PijlBreedte,dikte);
+            context.lineTo(0,dikte);
+            context.lineTo(0,0); 
+        } else{
+            context.lineTo(0,dikte);
+            context.lineTo(_r*vergroting+ PijlBreedte,+dikte);
+            context.lineTo(_r*vergroting+PijlBreedte,+pijlDikte);
+            context.lineTo(_r*vergroting,0);
+            context.lineTo(_r*vergroting+ PijlBreedte,-pijlDikte);
+            context.lineTo(_r*vergroting+ PijlBreedte,-dikte);
+            context.lineTo(0,-dikte);
+            context.lineTo(0,0);            
+        }
         context.closePath();
         context.stroke();
         context.fill();
