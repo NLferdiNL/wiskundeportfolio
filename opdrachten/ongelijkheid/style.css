@@ -1,9 +1,16 @@
 body{ 
 	background-color: azure; 
 }
+#wiskunde{
+    width: 280px;
+    height: 780px;
+    padding: 10px;
+    float:left;
+    background-color: white;
+    border: 2px solid black;
+}
 
 #canvas{
-    display: block;
     margin: auto;
     background-color: ghostwhite;
     border: 2px solid black;

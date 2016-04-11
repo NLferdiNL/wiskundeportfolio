@@ -7,6 +7,7 @@ var LijnOperaties = {
     tekenLijnStuk:function(x1,y1,x2,y2,context,kleur){
         context.beginPath();
         context.strokeStyle = kleur || "black";
+        context.lineWidth = "3";
         context.moveTo(x1,y1);
         context.lineTo(x2,y2);
         context.stroke();

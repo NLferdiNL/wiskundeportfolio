@@ -1,0 +1,9 @@
+body{ 
+	background-color: azure; 
+}
+
+#canvas{
+    margin: auto;
+    background-color: ghostwhite;
+    border: 2px solid black;
+}

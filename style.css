@@ -8,3 +8,26 @@ body{
     display: block;
     background-color: aliceblue;
 }
+
+
+.wiskunde{
+    width: 280px;
+    height: 780px;
+    padding: 10px;
+    float:left;
+    background-color: white;
+    border: 2px solid gray;
+    margin-right: 50px;
+}
+
+.opdracht{
+    width: 1150px;
+    height: 60px;
+    display: block;
+    background-color: midnightblue;
+    color:white;
+    margin-bottom: 10px;
+    font-family: serif;
+    font-size: 20pt;
+    padding: 5px;   
+}
