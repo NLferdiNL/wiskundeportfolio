@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	 <head>
-	 	 <title>Lijn door twee punten</title>
+	 	 <title>ongelijkheid</title>
 	 	 <link rel="stylesheet" type="text/css" href="style.css">
 	 	 <link rel="stylesheet" type="text/css" href="../../style.css">
 	 	 <script src="../../WiskundeObjecten/Rooster.js"></script>
@@ -15,28 +15,29 @@
 	 	 <script src="script.js"></script>
 	</head>
 	 <body>
-	 	 <h1>Lijn door Twee punten</h1>
-         <div class="opdracht">Opdracht: laat een bal met een eenparige snelheid binnen het kader met lijn l bewegen. Maak de bal rood als deze boven de lijn beweegt en blauw als de bal onder de lijn beweegt </div>
+	 	 <h1>ongelijkheid</h1>
+         <div class="opdracht">Opdracht: laat een bal met een eenparige snelheid binnen het kader met lijn l bewegen. Maak de bal rood als deze onder de lijn beweegt en blauw als de bal boven de lijn beweegt </div>
          <div class="wiskunde">
-            Neem twee punten A en B:
-             $$ A(x_A,y_A) $$
-            $$ B(x_B,y_B) $$
-             Bepaal het verschil in hoogte en breedte
-            $$ \Delta x = x_B - x_A $$
-            $$ \Delta y = y_B - y_A $$
-             Stel de helling van de lijn door A en B op
-             $$ l(x,y):ax + by = c $$ 
-             waarbij geldt:
-             $$a = \Delta y$$
-             $$b = -\Delta x$$
-             $$ l(x,y):\Delta y \cdot x - \Delta x \cdot y = c $$
-             bepaal de waarde voor c m.b.c. punt A 
-             $$c = \Delta y \cdot A_x - \Delta x \cdot A_y $$
-             nu zijn alle parameters voor lijn l bekend 
-             $$l(x,y):a \cdot x + b \cdot y = c$$
-             dus kan de lijn getekend worden
-             bepaal de y-waarde van de lijn bij x = 0 en trek een lijn naar de y-waarde bij x = 800
-            
+            Neem een lijn l, die te verplaatsen is via punten A en B (<a href="../lijnDoorTweePunten/index.html">lijn door twee punten</a> :
+            $$ \left\{\begin{matrix}A(x_A,y_A)
+             \\ B(x_B,y_B)
+             \\ l(x,y):ax+by = c
+
+             \end{matrix}\right.$$
+             neem een plaatsvector
+             $$\vec {r} = \binom{dx_r}{dy_r}$$
+             maak een instantie van een Bal en gebruik de plaatsvector om de bal te plaatsen
+            neem een snelheidsvector
+             $$\vec {v} = \binom{dx_v}{dy_v}$$
+             maak nu een animatielus waarbij per tijdstap &#916;t de nieuwe plaats voor de plaatsvector wordt bepaald d.m.v.
+             $$\vec {r}_{n+1} = \vec{r}_n + \vec{v}$$
+
+             als de plaatsvector boven lijn l ligt geldt:
+             $$l(x,y):a \cdot \vec{r}_x + b \cdot \vec{r}_y > 0$$
+
+             als de plaatsvector onder lijn l ligt geldt:
+             $$l(x,y):a \cdot \vec{r}_x + b \cdot \vec{r}_y < 0$$
+
          </div>
 	 	 <canvas id="canvas" width="800" height="800">
 	 	     no canvas
