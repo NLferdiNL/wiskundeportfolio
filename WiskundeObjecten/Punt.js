@@ -15,6 +15,7 @@ function Punt(x, y, r, kleur){
         dist = Math.sqrt(dx * dx + dy * dy);
         if (dist <= self.r) {
            canvas.style.cursor = "pointer";
+		   e.stopImmediatePropagation();
         } else {
             canvas.style.cursor = "auto";
         }
